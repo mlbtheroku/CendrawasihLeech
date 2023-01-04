@@ -28,5 +28,5 @@ COPY . .
 COPY extract /usr/local/bin
 COPY .netrc $HOME/.netrc
 RUN touch $HOME/.netrc && chmod a-rwx,u+rw $HOME/.netrc
-
+EXPOSE 5000
 CMD ["bash","start.sh"]
